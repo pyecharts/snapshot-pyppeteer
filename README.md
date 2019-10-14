@@ -3,6 +3,11 @@
     <em>Render pyecharts as image via pyppeteer</em>
 </p>
 <p align="center">
+    <a href="https://github.com/sunhailin-Leo">
+        <img src="https://img.shields.io/badge/Author-sunhailin--Leo-blue" alt="Author">
+    </a>
+</p>
+<p align="center">
     <a href="https://travis-ci.org/pyecharts/snapshot-pyppeteer">
         <img src="https://travis-ci.org/pyecharts/snapshot-pyppeteer.svg?branch=master" alt="Travis Build Status">
     </a>
