@@ -3,6 +3,9 @@
     <em>Render pyecharts as image via pyppeteer</em>
 </p>
 <p align="center">
+    <a href="https://travis-ci.org/pyecharts/snapshot-pyppeteer">
+        <img src="https://travis-ci.org/pyecharts/snapshot-pyppeteer.svg?branch=master" alt="Travis Build Status">
+    </a>
     <a href="https://ci.appveyor.com/project/sunhailin-Leo/snapshot-pyppeteer">
         <img src="https://ci.appveyor.com/api/projects/status/wpimbvko8d9fegjk/branch/master?svg=true" alt="Appveyor Build Status">
     </a>
