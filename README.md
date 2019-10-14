@@ -9,8 +9,8 @@
     <a href="https://ci.appveyor.com/project/sunhailin-Leo/snapshot-pyppeteer">
         <img src="https://ci.appveyor.com/api/projects/status/wpimbvko8d9fegjk/branch/master?svg=true" alt="Appveyor Build Status">
     </a>
-    <a href="https://codecov.io/gh/pyecharts/pyecharts">
-        <img src="https://codecov.io/gh/pyecharts/pyecharts/branch/master/graph/badge.svg" alt="Codecov">
+    <a href="https://codecov.io/gh/pyecharts/snapshot-pyppeteer">
+        <img src="https://codecov.io/gh/pyecharts/snapshot-pyppeteer/branch/master/graph/badge.svg" alt="Codecov">
     </a>
     <a href="https://badge.fury.io/py/snapshot-pyppeteer">
         <img src="https://badge.fury.io/py/snapshot-pyppeteer.svg" alt="PyPI version">
