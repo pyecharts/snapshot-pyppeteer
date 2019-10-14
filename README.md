@@ -19,9 +19,19 @@
         <img src="https://img.shields.io/pypi/pyversions/snapshot-pyppeteer.svg?colorB=brightgreen" alt="PyPI - Python Version">
     </a>
 </p>
+<p align="center">
+    <a href="https://pypi.org/project/snapshot-pyppeteer">
+        <img src="https://img.shields.io/pypi/format/snapshot-pyppeteer.svg" alt="PyPI - Format">
+    </a>
+     <a href="https://github.com/pyecharts/snapshot-pyppeteer/pulls">
+        <img src="https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat" alt="Contributions welcome">
+    </a>
+    <a href="https://opensource.org/licenses/MIT">
+        <img src="https://img.shields.io/badge/License-MIT-brightgreen.svg" alt="License">
+    </a>
+</p>
 
 ## 🔰 安装
-
 
 **pip 安装**
 ```shell
@@ -31,3 +41,35 @@ $ pip install snapshot-pyppeteer
 # 安装完后建议执行 chromium 安装命令
 pyppeteer-install
 ```
+
+## 📊 生成图片
+```python
+from snapshot_pyppeteer import snapshot
+
+from pyecharts.charts import Bar
+from pyecharts.faker import Faker
+from pyecharts import options as opts
+from pyecharts.render import make_snapshot
+
+
+def bar_base() -> Bar:
+    c = (
+        Bar()
+        .add_xaxis(Faker.choose())
+        .add_yaxis("商家A", Faker.values())
+        .add_yaxis("商家B", Faker.values())
+        .set_global_opts(title_opts=opts.TitleOpts(title="Bar-基本示例", subtitle="我是副标题"))
+    )
+    make_snapshot(snapshot, c.render(), "bar.png")
+
+
+if __name__ == '__main__':
+    bar_base()
+```
+<p align="center">
+<img src="https://user-images.githubusercontent.com/17564655/66774139-704bf300-eef3-11e9-9cc2-6767d9650b38.png"  width="85%" />
+</p>
+
+## 📃 License
+
+MIT [©sunhailin-Leo](https://github.com/sunhailin-Leo)
