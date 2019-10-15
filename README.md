@@ -12,7 +12,7 @@
         <img src="https://travis-ci.org/pyecharts/snapshot-pyppeteer.svg?branch=master" alt="Travis Build Status">
     </a>
     <a href="https://ci.appveyor.com/project/sunhailin-Leo/snapshot-pyppeteer">
-        <img src="https://ci.appveyor.com/api/projects/status/wpimbvko8d9fegjk/branch/master?svg=true" alt="Appveyor Build Status">
+        <img src="https://ci.appveyor.com/api/projects/status/4khrmyt8ustrbniw/branch/master?svg=true" alt="Appveyor Build Status">
     </a>
     <a href="https://codecov.io/gh/pyecharts/snapshot-pyppeteer">
         <img src="https://codecov.io/gh/pyecharts/snapshot-pyppeteer/branch/master/graph/badge.svg" alt="Codecov">
