@@ -113,6 +113,17 @@ make_snapshot(snapshot, c.render(), "bar.png", notebook=True)
 notebook | bool | False | 判断渲染环境是否处于 notebook 
 remoteAddress | str | 空字符串 | 用于 docker browserless 的地址配置
 
+## 🚀Docker browserless 的使用说明
+* 文档：[browserless 文档地址](https://docs.browserless.io/)
+* 使用步骤：
+    * 第一步：省略 docker 环境构建
+    * 第二步：拉取镜像 & 启动容器
+    ```shell script
+    $ docker pull browserless/chrome:latest
+    $ docker run -d -p 3000:3000 --shm-size 2gb --name browserless --restart always -e "DEBUG=browserless/chrome" -e "MAX_CONCURRENT_SESSIONS=10" browserless/chrome:latest
+    ```
+    * 第三步：渲染参数 `remoteAddress` 按此方式填入：`ws://<容器服务的IP>:3000`
+
 ## 📃 License
 
 MIT [©sunhailin-Leo](https://github.com/sunhailin-Leo)

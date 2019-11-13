@@ -12,11 +12,11 @@ __description__ = "Render pyecharts as image via pyppeteer"
 __url__ = "https://github.com/pyecharts/snapshot-pyppeteer"
 __author_email__ = "379978424@qq.com"
 __license__ = "MIT"
-__requires__ = ["pyppeteer"]
+__requires__ = ["pyppeteer", "nest_asyncio"]
 __keywords__ = ["snapshot-pyppeteer", "snapshot", "pyppeteer"]
 here = os.path.abspath(os.path.dirname(__file__))
 
-__version__ = "0.0.1"
+__version__ = "0.0.2"
 
 
 class UploadCommand(Command):
