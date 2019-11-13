@@ -107,10 +107,11 @@ make_snapshot(snapshot, c.render(), "bar.png", notebook=True)
 
 ## ☁️ 扩展参数
 * 在 `pyecharts` 的 `make_snapshot` 中允许传递 `kwargs` 类型的参数：
-参数名称 | 参数类型 | 参数默认值  
--|-|-
-notebook | bool | False |
-remoteAddress | str | 空字符串 |
+
+参数名称 | 参数类型 | 参数默认值 | 参数说明
+-|-|-|-
+notebook | bool | False | 判断渲染环境是否处于 notebook 
+remoteAddress | str | 空字符串 | 用于 docker browserless 的地址配置
 
 ## 📃 License
 
